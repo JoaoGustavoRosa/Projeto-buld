@@ -1,0 +1,93 @@
+
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(to top right, #2A8C82, #41BFB3, #275950, #260101);
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px;
+    animation: mudar-cor 1s infinite;
+}
+
+@keyframes mudar-cor{
+    0% { color: #23596e;}
+    50% { color: #4885d6;}
+    100% { color: #a243b9}
+}
+
+#bolboff{
+    position: absolute;
+    left: 860px;
+    top: 200px;
+    margin: auto;
+    background-color: #260101;
+}
+
+.botao{
+    position: absolute;
+    top: 500px;
+    left: 855px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#botao1{
+    width: 70px;
+    font-size: 17px;
+    box-shadow: 4px 4px 5px rgb(117, 37, 117);
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+#botao2{
+    width: 70px;
+    font-size: 17px;
+    box-shadow: 4px 4px 5px  rgb(117, 37, 117);
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#botao3{
+    width: 70px;
+    font-size: 17px;
+    box-shadow: 4px 4px 5px  rgb(117, 37, 117);
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.jogo{
+    position: relative;
+    top: 500px;
+    border: 2px solid black;
+    width: 945px;
+    height: 250px;
+    margin: auto;
+    
+}
+
+#bird{
+    animation: passaro 1s infinite;
+}
+
+@keyframes passaro{
+    100%{ background-position-x: ;}
+}
+
+.rotacao{
+    position: relative;
+    background-color: #cc24a8;
+    width: 10px;
+    height: 50px;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 20px;
+    top: 330px;
+    left: 900px;
+    animation: girar 1s infinite;
+}
+
+@keyframes girar{
+    0%{ transform: rotate(360deg);}
+}

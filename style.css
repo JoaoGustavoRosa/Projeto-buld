@@ -19,7 +19,7 @@ h1{
     100% { color: #a243b9}
 }
 
-#bolboff{
+#bolb{
     justify-content: center;
     
     display: block;
@@ -69,15 +69,28 @@ h1{
 }
 
 #bird{
+    position: relative;
     animation: passaro 1s infinite;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes passaro{
+    0%{ left: 1px;}
+    10%{ left: 10px;}
+    50%{ left: 200px;}
+    70%{ left: 300px;}
 }
 
 .rotacao{
+    position: relative;
     display: block;
     justify-content: flex-start;
     background-color: #cc24a8;
     width: 10px;
     height: 50px;
+    left: 500px;
+    top: 100px;
     box-shadow: 3px 3px 10px black;
     border-radius: 20px;
     animation: girar 1s infinite;

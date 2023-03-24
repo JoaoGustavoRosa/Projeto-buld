@@ -1,11 +1,11 @@
 function clicar1(){
-    window.alert('em andamento')
+    document.getElementById('bolb').src= "bolb/ligada.png"
 }
 
 function clicar2(){
-    window.alert('ja disse que esta em andamento')
+    document.getElementById('bolb').src= "bolb/desligada.png"
 }
 
 function clicar3(){
-    window.alert('Irmao tu é cego?')
+    document.getElementById('bolb').src= "bolb/quebrada.png"
 }

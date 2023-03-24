@@ -2,6 +2,7 @@
 body{
     background-attachment: fixed;
     background-image: linear-gradient(to top right, #2A8C82, #41BFB3, #275950, #260101);
+    flex-direction: column;
 }
 
 h1{
@@ -19,19 +20,18 @@ h1{
 }
 
 #bolboff{
-    position: absolute;
-    left: 860px;
-    top: 200px;
-    margin: auto;
-    background-color: #260101;
+    justify-content: center;
+    
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
 }
 
 .botao{
-    position: absolute;
-    top: 500px;
-    left: 855px;
+    vertical-align: 2px;
     text-align: center;
     cursor: pointer;
+    line-height: 20px;
 }
 
 #botao1{
@@ -39,7 +39,7 @@ h1{
     font-size: 17px;
     box-shadow: 4px 4px 5px rgb(117, 37, 117);
     cursor: pointer;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #botao2{
@@ -59,8 +59,8 @@ h1{
 }
 
 .jogo{
-    position: relative;
-    top: 500px;
+    display: block;
+    justify-content: center;
     border: 2px solid black;
     width: 945px;
     height: 250px;
@@ -72,19 +72,14 @@ h1{
     animation: passaro 1s infinite;
 }
 
-@keyframes passaro{
-    100%{ background-position-x: ;}
-}
-
 .rotacao{
-    position: relative;
+    display: block;
+    justify-content: flex-start;
     background-color: #cc24a8;
     width: 10px;
     height: 50px;
     box-shadow: 3px 3px 10px black;
     border-radius: 20px;
-    top: 330px;
-    left: 900px;
     animation: girar 1s infinite;
 }
 
